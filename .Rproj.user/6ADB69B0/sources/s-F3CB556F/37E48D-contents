@@ -1,0 +1,43 @@
+# Requerimentos {#req}
+
+## Hardware
+Processador : Mínimo 1GHZ, recomenda-se 2+GHz Quad Core
+RAM (exclusive SWAP) :
+Com ELK: Min 16 GB, Preferível 32 GB
+
+## Network
+
+As portas 443, 8080, 5432, 9200, 5601, 8983 devem estar abertas. Com exceção da 443, as demais podem estar fechadas, desde que por trás de proxy reverso.
+
+
+
+## Software
+
+Ubuntu 18.04+
+
+JAVA 8 JRE ou JDK com JAVA_HOME configurada no /etc/environment
+
+Python minimal instalado
+
+Nodejs (será usado com o prometheus e grafana)
+
+Locale configurado para pt_BR.UTF-8
+
+Exigências:
+
+Apache ManifoldCF 
+Apache Tika 
+Apache Tomcat
+Apache Zookeeper
+Apache Solr
+ELK (Elasticsearch, Logstash e Kibana) 
+Prometheus + Grafana
+Apache Cassandra
+Postgresql 11
+
+
+
+
+
+
+
