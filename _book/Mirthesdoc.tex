@@ -1,0 +1,321 @@
+\documentclass[]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Laboratório de jurimetria: documentação},
+            pdfauthor={José de Jesus Filho},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{natbib}
+\bibliographystyle{apalike}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Laboratório de jurimetria: documentação}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{José de Jesus Filho}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{2019-04-02}
+
+\usepackage{booktabs}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{visao-geral}{%
+\chapter{Visão geral}\label{visao-geral}}
+
+Este documento contêm tudo que se refere ao Myrthes. Nele há seções úteis tanto para desenvolvedores quanto para usuários (estudantes e professores de direito).
+
+\hypertarget{intro}{%
+\chapter{Introdução}\label{intro}}
+
+Diante do volume de processos judiciais em versão eletrônica atualmente disponíveis nas páginas dos tribunais, o acesso a esses dados tornou-se possível. Atualmente se vislumbra a possibilidade de baixar processos inteiros e analizá-los. Essa possibilidade, porém, implica em desafios.
+
+A comunidade do direito não é muito afeita à computação, bem como, aos métodos estatísticos e de aprendizado de máquina que atualmente avançam rapidamente e são liderados principalmente por pessoas provenientes da ciência da computação. Acontece que, embora o pessoal da ciência da computação e da estatística tenha liderado a implementação dos métodos de automação de coleta, extração, organização e análise de processos judiciais, ela carece de conhecimento substantivo do direito e isso tem causado erros e equívocos nas coletas e análises de dados.
+
+A necessidade de se implementar um laboratório de jurimetria na faculdade de direito que contemple a interdisciplinariedade se impõe, visto que um laboratório como este exige conhecimentos em várias áreas:
+
+1 - Implementação e manutenção de sistemas distribuídos para lidar com o algo volume de dados;
+
+2 - Conhecimentos específicos sobre processamento de linguagem natural;
+
+3 - Conhecimentos específicos sobre estatística e machine larnings;
+
+4 - Conhecimento aprofundado de cada uma da áreas do direito aplicado diariamente no tribunais de justiça do Brasil.
+
+\hypertarget{req}{%
+\chapter{Requerimentos}\label{req}}
+
+\hypertarget{hardware}{%
+\section{Hardware}\label{hardware}}
+
+Processador : Mínimo 1GHZ, recomenda-se 2+GHz Quad Core
+RAM (exclusive SWAP) :
+Com ELK: Min 16 GB, Preferível 32 GB
+
+\hypertarget{network}{%
+\section{Network}\label{network}}
+
+As portas 443, 8080, 5432, 9200, 5601, 8983 devem estar abertas. Com exceção da 443, as demais podem estar fechadas, desde que por trás de proxy reverso.
+
+\hypertarget{software}{%
+\section{Software}\label{software}}
+
+Ubuntu 18.04+
+
+JAVA 8 JRE ou JDK com JAVA\_HOME configurada no /etc/environment
+
+Python minimal instalado
+
+Nodejs (será usado com o prometheus e grafana)
+
+Locale configurado para pt\_BR.UTF-8
+
+Exigências:
+
+Apache ManifoldCF
+Apache Tika
+Apache Tomcat
+Apache Zookeeper
+Apache Solr
+ELK (Elasticsearch, Logstash e Kibana)
+Prometheus + Grafana
+Apache Cassandra
+Postgresql 11
+
+\hypertarget{instalacao}{%
+\chapter{Instalação}\label{instalacao}}
+
+\hypertarget{arquitetura}{%
+\section{Arquitetura}\label{arquitetura}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\OperatorTok{::}\KeywordTok{include_url}\NormalTok{(}\StringTok{"https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=arquitetura.drawio#R7V1rc9o6Gv41mfMpHt0vH3Nre2bb3e6mM2d2vznggLcGs8Y0SX%2F9SsYGXwTGxjKEmM40IFuyLOl93qteXeG72evnyF1Mv4VjL7hCYPx6he%2BvEIJMQPVHl7ytSwgD64JJ5I%2FTm7YFj%2F5vLy3Mblv5Y29ZuDEOwyD2F8XCUTife6O4UOZGUfhSvO05DIpPXbgTr1LwOHKDaulf%2FjierksFBdvyL54%2FmWZPhiC9MnOzm9OC5dQdhy%2B5Ivxwhe%2BiMIzX32avd16gBy8bl3W9TzuubjoWefP4kAr3X%2FC%2Fg6ffweo38f5kn%2BcgHP%2B%2BTlv55Qar9IWvEAtUe7dj%2F5fudPyWjgT730r39PZlPQo36iLD0IECisWr%2BqEuqf%2Bn6Vjoy5A4IHfpJYzG10%2BR5%2F5cX06%2BXuvSbePq2yT9m%2BuEG%2FiTeaETgfcc7661XLhzY9%2Bfw3l8%2FezO%2FOBt3Qd1yZ0tkqoYE%2FXXjXw3qJRu3iH2XuPrsTcKIzf2w%2Fm6kXk49zZ3JI9YJss4GQOUG4HAn3vX%2BRECLd6hvguVx0CiO1F%2B0re3KJ4q0kLgOqGf2UJ1Xa0l3dDYW5NUHIXq8WmX1NJa96rY093FyeztL0WFd0SKRhb6a5SQ8u2GZPSbLVVnfm6IEOnp9IPgLgzCKKmMPyWfzZ25K%2BuPuhIu3JEfayhSdOroVqfxLNA%2F1dd5gG6j9GG%2FvCj2FQrcpEsvDvV6yBZisvySORr588nX5Ne9cCRQ%2F%2BD2wr9SXGDboh%2B6nXuYPDotug3jOJzpBjR1Tf3Ye1QX9Ci8KEhVZZPAf35%2B%2B3Ocdq1K9xkRqz57r7miFAc%2Be%2BHMi6M3dUt69ZpxtK6TojJEbP37ZYtxjKTANc3hG%2BZpoZvi6mTT%2BBZ61JcUfRogEToQif7IARCizNEEpqaxijtqMHcjDr79o2%2BsuUmgpQZGdmLILgBJetIdhuwBENOTbtRKnWqs%2BBHORq4aJiAd4IisA0%2FR4WAxYIhuAjrEJn7grvADl%2FBDigp%2BIG7AD4ihJfzAx0gyql8FWSW%2F%2BAkaxJgzFmPu3dh9Vu%2BrbvjLe3IXC7vgczZTWX7UZ08R9Mh3Z4qsQy3C6f9Wy9XVHb66gZEfXtbrPnqTVaSeot%2BOuzXvZlwKF8RZZv54rDtZw1yAQ83MpYZr0K64BixyDYSrUidCtMo1OLXENEgLoVPiVLzMYxMSncqcI62HRYPUaZY679zl0p2PI0X2ADtKZkJ7Cf3DCpwVWEiXVVVzzYmTDXCBd4ULJWkS0youbOxqeVwQtpRRunOS9fR544exthoaZrcyiyD5lOY9XfTL2I3iG22kLJV98nV30wWkfqdmUT0l3nyc1XgKwtHPdVFaAa5%2F5W6PwtV87I3Ta7m5k%2FpW9RaP6SuGUTwNJ%2BHcDR62pbtndxmuopFXL46r3k%2B8uB6BvXHBDFtdK7mlQKoLgaXdirxAYcuvou3WtDqSB6iBdN9yNyxCfx4vc8%2F%2FrgtyC5Vy5hCOmcSCcEZZadlCWDTANqyOmMIypTVBAhmAKQ20bYwoVEQUc9UrQig%2BrmeUORgLwDHHgDCRsuMtga0Hcktum3lrT4HsGHVODaOD%2BrdKd8e1P7JC98n9FUZ%2BrJjocmDrx7F10oqtQ9gRXyfiAL6OjFZmS3ydD6jSAFWsY8aBiGDW9QdQ6BUUujIdV0BByhODguhf2M9E97y0Dy1K%2B5BaFvfJgeI%2Bay7uU15dCz2J%2B2W9lEuHKHmacgqlkqlRQQ421IfUwUBJ1JBxuRGb27ZGpHAYZJJgTCU%2BtjEBHYkogRRgCRhq0podgV9%2BACoUx1FhIyVZdEQ1prVTJAsCuSMwB5hBjES2WDYtrrEjbWQvuWDkAE6oIJKBygqvecoaeSpPaU7zgDtAqc1SjWBO193fC6uEkUXCtRRaAXLYDqE1NVpfltB6Sarw93AZTyLv8Z9fE%2FVjkHyPk3xRK8kXdaUO4wOCJiA0SL7UlpkbHhn%2BiR2iPrvg5SJ14kuCl1wE6GMYRHdBuFJzAe6C1XI9umeDNkWRyo1GqbiV6DXu0zIMVrF3sy0%2BC4D66j55gYJwfz1LafxXGb6e0vCtOvjiDl9%2F2oFYZz78UuQoJQdGjkJrkaNZVEGz0FEFXmIIHT2dE18jzihFnL%2BHScD5IOC0jRvlTi5G1ELYKOoKPWgJPZghAsiIHtgaehwVOMqpw3f5BAb16szln030usYi9UfHwQwIZECgQ1UsBUOklXiCuwslkk7RYsMAzkpyIJOZsHqJMoStwgwVWlcFlA8VZ7hTdvhPqFa4t9A9V7NLHAgGcjSSo9whFtSRo%2ByIHCniBxCjNNiq7RHj5cf2EQ3CNr198FB3XyZcNfFcYOoIxYslg0QwAZkh3A86RCbBbQwASilJwdy2O7C8mEldVB3mDmSMISqToDrasDrhjoYKqAhEaGdDw%2BqUl1lhsYold8WhkXuDNn7e2vh8kIXPUxtnXe0Cx4CcnTZ%2BVITeoI0P2vjlI5B1bZyKjgAGKSX2%2FLRxMWjjgzb%2BjrRx2pXvDnJ5dtr4CcL%2BetbGqbZtWtXGxaHaOL8gbbyymOv0YSjkMdo4lLKojTesr1PjnEAd32SfqxKYqu0vlnrtKez21YM0aGWl37dFDbF2Q4e7KbSKtXn1pqudBliU7DWGJFemcCtoS7nZUPT7mYuuWA8m5zYX6N3NBetqLti5zQXuXwjoO%2FafW5cCwIFSAG2zm6C6GjDphc2jjFCznDHpYtnDZ%2Bk%2BPl1bHwrhKCmBCQ4g5LC8AaC%2BPt%2FbYUtcnlQoaKKWYkmRELYMhxgZ9vAZ078RaxiSTlPLXRIMnGJr76nyv53Lxt5iCtobhYVvSrUetv23dTxIu9kjmTksYC8iHYAqJwSN47KMKM33BLmvB29DF96Gh8Bdaqzx3Gg0HeClyTaqdlZMbt5GdSx4pFczISbbpgmq8gg2QIs1PyY6LtPIHmSxmI62NbK0oMqTEv8G4uZPy0XH4kXTwf2y8rptcOAD57IUBlawgxWYLbx2WMEmceTpeEEbh3PGAooO5xT8T%2B5wbhp3durwtnMC%2FJbK82kH8Gs4WcbucpekTB2mVM%2BzGL0PEa45cK0TcC2zL8wO1%2BInZ1qXH5ghknstumRSR0CtRyazXTfxyMBsH0shDXI%2FoRe4lB8YSeAwDKRYpxquyz2GKHEQELscNF02ljkmrDpf8O4Qi4shFWKZVLJMNFZoxRjC3hetlHe8k5q83uUKBHFHSiIxAQKBeoIo%2B%2Bb217dEEbsDXc7JoZ82s6UI0IAijszl1xnzgC3c%2BVnUZVGS6MehXz7soSHeM4ociiBHgsJKEF%2BXbZUI1RKhoAqhGPz2sqt4fEFKYw8MkT9GtAS2AoDxUek3IIYO%2BTh%2B%2B0syvN7qs5mTPQMtTiq7fG32oANnhVmR7cbbLxtYaTMca%2Bjt7xlqOjvtq%2BONyYOta5%2Bt6%2Ba%2F7utz5M5HSi55GmKDTnLSl2xg%2B2qABZntCxSVdkNaVNPpX0TaAorLTxEiz%2BX8rwyUG6kvwLBFrR91vnKEJdXb%2BpjkUorq0ViG%2BiSJLt4VXNy0NZHEOgsF3yzJ039UaxwhRy1WxiEW6j8hGrRmST2qxuc9%2BsvYm7lXSbbIS4Nnvit%2Bs%2B5wFtDRnqlsJ0bmOzfsDDFFaCKAbUHxUXFUjOyM6h7SQZy5frgl9CERzYlApaPNfyVQ0UdoVHedm2CFC1uo0ioFxKAJnlgT%2FHp%2F8z1BxU%2F6Be8HWDiFKghBV7lay25kSg7U%2B2zFPODdMQ9nuicYQtTNZNCisI8NWf173RJMdvvUz3YqOpLBy1MhTGTR51S8u6wFsKsTbMtTwU49FVV34aUZpqD1oyrxoelyWuSuFQbDFBQpW%2Bk5KouT%2FHozHONHkSOBIh9gyodzXG2Ee3CekxOkjeidGti5UEObtBEwEyOK23lpL%2FSAGtIDhPyo%2B7Pj3Oyu%2BUN9mEZ7WKrCDhuW36E97EfkP63m%2Bm3P5Jyk2etEKYdT5zkIX0ZThX%2BOmuWZP3fjsLnI9641YthRfBYkRXnTZH43asTWDogkR2VVGeDmIuAGDXBzVnCTzmTncIMYPDXcHJWPZYCbi4Cb83D3DXCzgZuOTMxluCGmpHH9wg3v34DQd95JiGzb0zKVtN6exppbELLNUAUDQh%2Fmg4osTvfnd4ZIOowSSiCo7iWprQyhg4EsbNA6tK5EjmSY6f07rBxPVqprySQhPgIV2bbDZZqWHSoy7BU%2BCRUhsX%2F3Y0JFWBKgmENlNddWVlSEuBBAUIkb1tVUBIV6vpCgYswWfRizT7Dfvn8qsp0EOVMg6qmoxVEI1OTqOwUVEbrfNJ1QEeEcUMArW%2BJrK2sqkpRirRBWOFldbU1HBCPMTeyoVNkOIWWzNGwo%2FGAq5Ob8sB%2FhbOTGVztS5AzRYue1zRDijvTLa5hFymTSL0sdxLVbDq1l0cmcpi3BCCCHDfHr7xyOvrlz%2FzkMxnefBkjq1qCFzLhUBzjmLOZtjlMrBhhkAQDFNE19GrQya8klR8QgYlmHwIfqEG0iYrgpQKwPHQJhR0n2hAIoacXGpDQGpTAQRjE%2BJMUQdRCVoHBvy5YwdphSNiBjBqtZw7bKScn21bakenyAgDRkO%2B9RppnbIT9DPNomh6JtAizpwsypW9BOWX1uXEXxYwcrXZ4wxuUB%2B4nR4bUtkVD1IKNLIyFhe%2Bt9RhhWUocZ%2FDGY9EJA15I4CArETBvnidi%2FsvfUxYQnB4ZxAtR3XEcje1pS3EZv7ufkoO32exqiqiG1diFCgPfFuy4%2F54VA50J4bZJYIpPkSFkvlFcOda4lt0oFCepY1yYpYfsqvWR7zYb84hw1Y3c53fx49l%2Fvdbr37aXvbqy0cK2PQwVO2uzB9mn1ebqzvqPHosSIKTdwvH7IjgDo6HxoECCKDX5JvN%2BnWVcf0joqxtLhAnJsyKx8XOU%2BtkrQ445gUiwYS%2FiR4gnP5lRIbSkF7ioOI3%2FsjrUNdaRAcaR%2Buyc1mWrb8G7EC9wnL7h1Rz8nCa6arKUdW0CBKaSvDL7m3fp7WdvhNlDVA6bTQSEmFZUTyTKO3AwZt%2BiR3RI%2BPy8VlpcNos1gYfa3r%2FIn%2BNf86R9fvjw%2B0PnDLb%2B9NnlkSvOcY6OjwF0u%2FVGZIW%2BLc1N6KIsrsR8Dz2schkBbaWBV0BYAO2ao3rSy5sZpxb1WQinK1ghUamvNsSttNWaU1W7zGu5U7RzvliUZ1x6qrL1Qwdy0ugK3khnY4dDIrbsdRHvQutrkfst0%2BHQ0mOH8EWRYeC1ycaifUagBfzuyOtL6Wzj29B3%2FBw%3D%3D"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## PhantomJS not found. You can install it with webshot::install_phantomjs(). If it is installed, please make sure the phantomjs executable can be found via the PATH variable.
+\end{verbatim}
+
+\hypertarget{implementacao}{%
+\section{Implementação}\label{implementacao}}
+
+A tabela abaixo, que deve ser atualizada conforme adicionamos novos elementos, lista as implementações, bem como o seu estágio.
+
+\begin{table}[t]
+
+\caption{\label{tab:tab-imp}Implementações}
+\centering
+\begin{tabular}{ll}
+\toprule
+Recurso & Implementado\\
+\midrule
+scraper tribunais & parcial\\
+crawler djes & sim\\
+indexação para Solr & sim\\
+tika-ocr & sim\\
+stopwords & parcial\\
+\addlinespace
+anotação & não\\
+fuzzy search & sim\\
+regex textos & sim\\
+parseamento htmls & parcial\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\hypertarget{section}{%
+\section{}\label{section}}
+
+\hypertarget{sysconf}{%
+\chapter{Configuração do sistema}\label{sysconf}}
+
+\hypertarget{section-1}{%
+\section{}\label{section-1}}
+
+\hypertarget{myrconf}{%
+\chapter{Configuracao do Myrthes}\label{myrconf}}
+
+Na configuração do sistema é importante levar em consideração o consumo da RAM e da CPU. A indexação consome bastante CPU. Por sua vez, a busca consome muita RAM. Abaixo seguem as configurações mínimas de RAM, de CPU e swap.
+
+\hypertarget{busca}{%
+\chapter{Busca com Myrthes}\label{busca}}
+
+\hypertarget{busca-basica}{%
+\section{Busca básica}\label{busca-basica}}
+
+\hypertarget{autocompletar}{%
+\section{Autocompletar}\label{autocompletar}}
+
+\hypertarget{filtragem-por-datas}{%
+\section{Filtragem por datas}\label{filtragem-por-datas}}
+
+\hypertarget{facetas}{%
+\section{Facetas}\label{facetas}}
+
+\hypertarget{destaque-highligting}{%
+\section{Destaque (highligting)}\label{destaque-highligting}}
+
+\hypertarget{busca-avancada}{%
+\section{Busca avançada}\label{busca-avancada}}
+
+\hypertarget{alertas}{%
+\section{Alertas}\label{alertas}}
+
+\hypertarget{favoritos}{%
+\section{Favoritos}\label{favoritos}}
+
+\hypertarget{configuracao-do-solr-no-myrthes}{%
+\section{Configuração do Solr no Myrthes}\label{configuracao-do-solr-no-myrthes}}
+
+\hypertarget{dashbord}{%
+\chapter{Dashboard}\label{dashbord}}
+
+\hypertarget{criando-dashboards}{%
+\section{Criando dashboards}\label{criando-dashboards}}
+
+\hypertarget{tabelas}{%
+\section{Tabelas}\label{tabelas}}
+
+\hypertarget{graficos-de-barra}{%
+\section{Gráficos de barra}\label{graficos-de-barra}}
+
+\hypertarget{graficos-de-linha}{%
+\section{Gráficos de linha}\label{graficos-de-linha}}
+
+\hypertarget{mapas}{%
+\section{Mapas}\label{mapas}}
+
+\hypertarget{textos}{%
+\section{Textos}\label{textos}}
+
+\hypertarget{incluindo-facetas-e-filtros-no-dashboard}{%
+\section{Incluindo facetas e filtros no dashboard}\label{incluindo-facetas-e-filtros-no-dashboard}}
+
+\hypertarget{partilhando-o-dashboard}{%
+\section{Partilhando o dashboard}\label{partilhando-o-dashboard}}
+
+\hypertarget{faq}{%
+\chapter{FAQ}\label{faq}}
+
+\bibliography{book.bib}
+
+
+\end{document}
