@@ -1,0 +1,17 @@
+# Introdução {#intro}
+
+Diante do volume de processos judiciais em versão eletrônica atualmente disponíveis nas páginas dos tribunais, o acesso a esses dados tornou-se possível. Atualmente se vislumbra a possibilidade de baixar processos inteiros e analizá-los. Essa possibilidade, porém, implica em desafios.
+
+A comunidade do direito não é muito afeita à computação, bem como, aos métodos estatísticos e de aprendizado de máquina que atualmente avançam rapidamente e são liderados principalmente por pessoas provenientes da ciência da computação.  Acontece que, embora o pessoal da ciência da computação e da estatística tenha liderado a implementação dos métodos de automação de coleta, extração, organização e análise de processos judiciais, ela carece de conhecimento substantivo do direito e isso tem causado erros e equívocos nas coletas e análises de dados. 
+
+A necessidade de se implementar um laboratório de jurimetria na faculdade de direito que contemple a interdisciplinariedade se impõe, visto que um laboratório como este exige conhecimentos em várias áreas:
+
+1 - Implementação e manutenção de sistemas distribuídos para lidar com o algo volume de dados;
+
+2 - Conhecimentos específicos sobre processamento de linguagem natural;
+
+3 - Conhecimentos específicos sobre estatística e machine larnings;
+
+4 - Conhecimento aprofundado de cada uma da áreas do direito aplicado diariamente no tribunais de justiça do Brasil.
+
+

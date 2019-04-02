@@ -1,0 +1,19 @@
+# Busca com Myrthes {#busca}
+
+## Busca básica
+
+## Autocompletar
+
+## Filtragem por datas
+
+## Facetas
+
+## Destaque (highligting)
+
+## Busca avançada
+
+## Alertas
+
+## Favoritos
+
+## Configuração do Solr no Myrthes

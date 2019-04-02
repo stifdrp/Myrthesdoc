@@ -1,0 +1,3 @@
+# Configuracao do Myrthes {#myrconf}
+
+Na configuração do sistema é importante levar em consideração o consumo da RAM e da CPU. A indexação consome bastante CPU.  Por sua vez, a busca consome muita RAM. Abaixo seguem as configurações mínimas de RAM, de CPU e swap.

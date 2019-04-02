@@ -1,0 +1,17 @@
+# Dashboard {#dashbord}
+
+## Criando dashboards
+
+## Tabelas
+
+## Gráficos de barra
+
+## Gráficos de linha
+
+## Mapas
+
+## Textos
+
+## Incluindo facetas e filtros no dashboard
+
+## Partilhando o dashboard

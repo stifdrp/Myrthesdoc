@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Chapter 4 Instalação | Laboratório de jurimetria: documentação</title>
+  <meta name="description" content="Documentação da arquitetura, instalação, administração e utilização da arquitetura do laboratório de jurimetria da faculdade de direito da USP de Ribeirnao Preto.">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="Chapter 4 Instalação | Laboratório de jurimetria: documentação" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Documentação da arquitetura, instalação, administração e utilização da arquitetura do laboratório de jurimetria da faculdade de direito da USP de Ribeirnao Preto." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Instalação | Laboratório de jurimetria: documentação" />
+  
+  <meta name="twitter:description" content="Documentação da arquitetura, instalação, administração e utilização da arquitetura do laboratório de jurimetria da faculdade de direito da USP de Ribeirnao Preto." />
+  
+
+<meta name="author" content="José de Jesus Filho">
+
+
+<meta name="date" content="2019-04-02">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="req.html">
+<link rel="next" href="sysconf.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Myrthes documentação</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Visão geral</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introdução</a></li>
+<li class="chapter" data-level="3" data-path="req.html"><a href="req.html"><i class="fa fa-check"></i><b>3</b> Requerimentos</a><ul>
+<li class="chapter" data-level="3.1" data-path="req.html"><a href="req.html#hardware"><i class="fa fa-check"></i><b>3.1</b> Hardware</a></li>
+<li class="chapter" data-level="3.2" data-path="req.html"><a href="req.html#network"><i class="fa fa-check"></i><b>3.2</b> Network</a></li>
+<li class="chapter" data-level="3.3" data-path="req.html"><a href="req.html#software"><i class="fa fa-check"></i><b>3.3</b> Software</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="instalacao.html"><a href="instalacao.html"><i class="fa fa-check"></i><b>4</b> Instalação</a><ul>
+<li class="chapter" data-level="4.1" data-path="instalacao.html"><a href="instalacao.html#arquitetura"><i class="fa fa-check"></i><b>4.1</b> Arquitetura</a></li>
+<li class="chapter" data-level="4.2" data-path="instalacao.html"><a href="instalacao.html#implementacao"><i class="fa fa-check"></i><b>4.2</b> Implementação</a></li>
+<li class="chapter" data-level="4.3" data-path="instalacao.html"><a href="instalacao.html#section"><i class="fa fa-check"></i><b>4.3</b> </a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="sysconf.html"><a href="sysconf.html"><i class="fa fa-check"></i><b>5</b> Configuração do sistema</a><ul>
+<li class="chapter" data-level="5.1" data-path="sysconf.html"><a href="sysconf.html#section-1"><i class="fa fa-check"></i><b>5.1</b> </a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="myrconf.html"><a href="myrconf.html"><i class="fa fa-check"></i><b>6</b> Configuracao do Myrthes</a></li>
+<li class="chapter" data-level="" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i>Referências</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Laboratório de jurimetria: documentação</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="instalacao" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> Instalação</h1>
+<div id="arquitetura" class="section level2">
+<h2><span class="header-section-number">4.1</span> Arquitetura</h2>
+<pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span><span class="kw">include_url</span>(<span class="st">&quot;https://www.draw.io/?lightbox=1&amp;highlight=0000ff&amp;edit=_blank&amp;layers=1&amp;nav=1&amp;title=arquitetura.drawio#R7V1rc9o6Gv41mfMpHt0vH3Nre2bb3e6mM2d2vznggLcGs8Y0SX%2F9SsYGXwTGxjKEmM40IFuyLOl93qteXeG72evnyF1Mv4VjL7hCYPx6he%2BvEIJMQPVHl7ytSwgD64JJ5I%2FTm7YFj%2F5vLy3Mblv5Y29ZuDEOwyD2F8XCUTife6O4UOZGUfhSvO05DIpPXbgTr1LwOHKDaulf%2FjierksFBdvyL54%2FmWZPhiC9MnOzm9OC5dQdhy%2B5Ivxwhe%2BiMIzX32avd16gBy8bl3W9TzuubjoWefP4kAr3X%2FC%2Fg6ffweo38f5kn%2BcgHP%2B%2BTlv55Qar9IWvEAtUe7dj%2F5fudPyWjgT730r39PZlPQo36iLD0IECisWr%2BqEuqf%2Bn6Vjoy5A4IHfpJYzG10%2BR5%2F5cX06%2BXuvSbePq2yT9m%2BuEG%2FiTeaETgfcc7661XLhzY9%2Bfw3l8%2FezO%2FOBt3Qd1yZ0tkqoYE%2FXXjXw3qJRu3iH2XuPrsTcKIzf2w%2Fm6kXk49zZ3JI9YJss4GQOUG4HAn3vX%2BRECLd6hvguVx0CiO1F%2B0re3KJ4q0kLgOqGf2UJ1Xa0l3dDYW5NUHIXq8WmX1NJa96rY093FyeztL0WFd0SKRhb6a5SQ8u2GZPSbLVVnfm6IEOnp9IPgLgzCKKmMPyWfzZ25K%2BuPuhIu3JEfayhSdOroVqfxLNA%2F1dd5gG6j9GG%2FvCj2FQrcpEsvDvV6yBZisvySORr588nX5Ne9cCRQ%2F%2BD2wr9SXGDboh%2B6nXuYPDotug3jOJzpBjR1Tf3Ye1QX9Ci8KEhVZZPAf35%2B%2B3Ocdq1K9xkRqz57r7miFAc%2Be%2BHMi6M3dUt69ZpxtK6TojJEbP37ZYtxjKTANc3hG%2BZpoZvi6mTT%2BBZ61JcUfRogEToQif7IARCizNEEpqaxijtqMHcjDr79o2%2BsuUmgpQZGdmLILgBJetIdhuwBENOTbtRKnWqs%2BBHORq4aJiAd4IisA0%2FR4WAxYIhuAjrEJn7grvADl%2FBDigp%2BIG7AD4ihJfzAx0gyql8FWSW%2F%2BAkaxJgzFmPu3dh9Vu%2BrbvjLe3IXC7vgczZTWX7UZ08R9Mh3Z4qsQy3C6f9Wy9XVHb66gZEfXtbrPnqTVaSeot%2BOuzXvZlwKF8RZZv54rDtZw1yAQ83MpYZr0K64BixyDYSrUidCtMo1OLXENEgLoVPiVLzMYxMSncqcI62HRYPUaZY679zl0p2PI0X2ADtKZkJ7Cf3DCpwVWEiXVVVzzYmTDXCBd4ULJWkS0youbOxqeVwQtpRRunOS9fR544exthoaZrcyiyD5lOY9XfTL2I3iG22kLJV98nV30wWkfqdmUT0l3nyc1XgKwtHPdVFaAa5%2F5W6PwtV87I3Ta7m5k%2FpW9RaP6SuGUTwNJ%2BHcDR62pbtndxmuopFXL46r3k%2B8uB6BvXHBDFtdK7mlQKoLgaXdirxAYcuvou3WtDqSB6iBdN9yNyxCfx4vc8%2F%2FrgtyC5Vy5hCOmcSCcEZZadlCWDTANqyOmMIypTVBAhmAKQ20bYwoVEQUc9UrQig%2BrmeUORgLwDHHgDCRsuMtga0Hcktum3lrT4HsGHVODaOD%2BrdKd8e1P7JC98n9FUZ%2BrJjocmDrx7F10oqtQ9gRXyfiAL6OjFZmS3ydD6jSAFWsY8aBiGDW9QdQ6BUUujIdV0BByhODguhf2M9E97y0Dy1K%2B5BaFvfJgeI%2Bay7uU15dCz2J%2B2W9lEuHKHmacgqlkqlRQQ421IfUwUBJ1JBxuRGb27ZGpHAYZJJgTCU%2BtjEBHYkogRRgCRhq0podgV9%2BACoUx1FhIyVZdEQ1prVTJAsCuSMwB5hBjES2WDYtrrEjbWQvuWDkAE6oIJKBygqvecoaeSpPaU7zgDtAqc1SjWBO193fC6uEkUXCtRRaAXLYDqE1NVpfltB6Sarw93AZTyLv8Z9fE%2FVjkHyPk3xRK8kXdaUO4wOCJiA0SL7UlpkbHhn%2BiR2iPrvg5SJ14kuCl1wE6GMYRHdBuFJzAe6C1XI9umeDNkWRyo1GqbiV6DXu0zIMVrF3sy0%2BC4D66j55gYJwfz1LafxXGb6e0vCtOvjiDl9%2F2oFYZz78UuQoJQdGjkJrkaNZVEGz0FEFXmIIHT2dE18jzihFnL%2BHScD5IOC0jRvlTi5G1ELYKOoKPWgJPZghAsiIHtgaehwVOMqpw3f5BAb16szln030usYi9UfHwQwIZECgQ1UsBUOklXiCuwslkk7RYsMAzkpyIJOZsHqJMoStwgwVWlcFlA8VZ7hTdvhPqFa4t9A9V7NLHAgGcjSSo9whFtSRo%2ByIHCniBxCjNNiq7RHj5cf2EQ3CNr198FB3XyZcNfFcYOoIxYslg0QwAZkh3A86RCbBbQwASilJwdy2O7C8mEldVB3mDmSMISqToDrasDrhjoYKqAhEaGdDw%2BqUl1lhsYold8WhkXuDNn7e2vh8kIXPUxtnXe0Cx4CcnTZ%2BVITeoI0P2vjlI5B1bZyKjgAGKSX2%2FLRxMWjjgzb%2BjrRx2pXvDnJ5dtr4CcL%2BetbGqbZtWtXGxaHaOL8gbbyymOv0YSjkMdo4lLKojTesr1PjnEAd32SfqxKYqu0vlnrtKez21YM0aGWl37dFDbF2Q4e7KbSKtXn1pqudBliU7DWGJFemcCtoS7nZUPT7mYuuWA8m5zYX6N3NBetqLti5zQXuXwjoO%2FafW5cCwIFSAG2zm6C6GjDphc2jjFCznDHpYtnDZ%2Bk%2BPl1bHwrhKCmBCQ4g5LC8AaC%2BPt%2FbYUtcnlQoaKKWYkmRELYMhxgZ9vAZ078RaxiSTlPLXRIMnGJr76nyv53Lxt5iCtobhYVvSrUetv23dTxIu9kjmTksYC8iHYAqJwSN47KMKM33BLmvB29DF96Gh8Bdaqzx3Gg0HeClyTaqdlZMbt5GdSx4pFczISbbpgmq8gg2QIs1PyY6LtPIHmSxmI62NbK0oMqTEv8G4uZPy0XH4kXTwf2y8rptcOAD57IUBlawgxWYLbx2WMEmceTpeEEbh3PGAooO5xT8T%2B5wbhp3durwtnMC%2FJbK82kH8Gs4WcbucpekTB2mVM%2BzGL0PEa45cK0TcC2zL8wO1%2BInZ1qXH5ghknstumRSR0CtRyazXTfxyMBsH0shDXI%2FoRe4lB8YSeAwDKRYpxquyz2GKHEQELscNF02ljkmrDpf8O4Qi4shFWKZVLJMNFZoxRjC3hetlHe8k5q83uUKBHFHSiIxAQKBeoIo%2B%2Bb217dEEbsDXc7JoZ82s6UI0IAijszl1xnzgC3c%2BVnUZVGS6MehXz7soSHeM4ociiBHgsJKEF%2BXbZUI1RKhoAqhGPz2sqt4fEFKYw8MkT9GtAS2AoDxUek3IIYO%2BTh%2B%2B0syvN7qs5mTPQMtTiq7fG32oANnhVmR7cbbLxtYaTMca%2Bjt7xlqOjvtq%2BONyYOta5%2Bt6%2Ba%2F7utz5M5HSi55GmKDTnLSl2xg%2B2qABZntCxSVdkNaVNPpX0TaAorLTxEiz%2BX8rwyUG6kvwLBFrR91vnKEJdXb%2BpjkUorq0ViG%2BiSJLt4VXNy0NZHEOgsF3yzJ039UaxwhRy1WxiEW6j8hGrRmST2qxuc9%2BsvYm7lXSbbIS4Nnvit%2Bs%2B5wFtDRnqlsJ0bmOzfsDDFFaCKAbUHxUXFUjOyM6h7SQZy5frgl9CERzYlApaPNfyVQ0UdoVHedm2CFC1uo0ioFxKAJnlgT%2FHp%2F8z1BxU%2F6Be8HWDiFKghBV7lay25kSg7U%2B2zFPODdMQ9nuicYQtTNZNCisI8NWf173RJMdvvUz3YqOpLBy1MhTGTR51S8u6wFsKsTbMtTwU49FVV34aUZpqD1oyrxoelyWuSuFQbDFBQpW%2Bk5KouT%2FHozHONHkSOBIh9gyodzXG2Ee3CekxOkjeidGti5UEObtBEwEyOK23lpL%2FSAGtIDhPyo%2B7Pj3Oyu%2BUN9mEZ7WKrCDhuW36E97EfkP63m%2Bm3P5Jyk2etEKYdT5zkIX0ZThX%2BOmuWZP3fjsLnI9641YthRfBYkRXnTZH43asTWDogkR2VVGeDmIuAGDXBzVnCTzmTncIMYPDXcHJWPZYCbi4Cb83D3DXCzgZuOTMxluCGmpHH9wg3v34DQd95JiGzb0zKVtN6exppbELLNUAUDQh%2Fmg4osTvfnd4ZIOowSSiCo7iWprQyhg4EsbNA6tK5EjmSY6f07rBxPVqprySQhPgIV2bbDZZqWHSoy7BU%2BCRUhsX%2F3Y0JFWBKgmENlNddWVlSEuBBAUIkb1tVUBIV6vpCgYswWfRizT7Dfvn8qsp0EOVMg6qmoxVEI1OTqOwUVEbrfNJ1QEeEcUMArW%2BJrK2sqkpRirRBWOFldbU1HBCPMTeyoVNkOIWWzNGwo%2FGAq5Ob8sB%2FhbOTGVztS5AzRYue1zRDijvTLa5hFymTSL0sdxLVbDq1l0cmcpi3BCCCHDfHr7xyOvrlz%2FzkMxnefBkjq1qCFzLhUBzjmLOZtjlMrBhhkAQDFNE19GrQya8klR8QgYlmHwIfqEG0iYrgpQKwPHQJhR0n2hAIoacXGpDQGpTAQRjE%2BJMUQdRCVoHBvy5YwdphSNiBjBqtZw7bKScn21bakenyAgDRkO%2B9RppnbIT9DPNomh6JtAizpwsypW9BOWX1uXEXxYwcrXZ4wxuUB%2B4nR4bUtkVD1IKNLIyFhe%2Bt9RhhWUocZ%2FDGY9EJA15I4CArETBvnidi%2FsvfUxYQnB4ZxAtR3XEcje1pS3EZv7ufkoO32exqiqiG1diFCgPfFuy4%2F54VA50J4bZJYIpPkSFkvlFcOda4lt0oFCepY1yYpYfsqvWR7zYb84hw1Y3c53fx49l%2Fvdbr37aXvbqy0cK2PQwVO2uzB9mn1ebqzvqPHosSIKTdwvH7IjgDo6HxoECCKDX5JvN%2BnWVcf0joqxtLhAnJsyKx8XOU%2BtkrQ445gUiwYS%2FiR4gnP5lRIbSkF7ioOI3%2FsjrUNdaRAcaR%2Buyc1mWrb8G7EC9wnL7h1Rz8nCa6arKUdW0CBKaSvDL7m3fp7WdvhNlDVA6bTQSEmFZUTyTKO3AwZt%2BiR3RI%2BPy8VlpcNos1gYfa3r%2FIn%2BNf86R9fvjw%2B0PnDLb%2B9NnlkSvOcY6OjwF0u%2FVGZIW%2BLc1N6KIsrsR8Dz2schkBbaWBV0BYAO2ao3rSy5sZpxb1WQinK1ghUamvNsSttNWaU1W7zGu5U7RzvliUZ1x6qrL1Qwdy0ugK3khnY4dDIrbsdRHvQutrkfst0%2BHQ0mOH8EWRYeC1ycaifUagBfzuyOtL6Wzj29B3%2FBw%3D%3D&quot;</span>)</code></pre>
+<iframe src="https://www.draw.io/?lightbox=1&amp;highlight=0000ff&amp;edit=_blank&amp;layers=1&amp;nav=1&amp;title=arquitetura.drawio#R7V1rc9o6Gv41mfMpHt0vH3Nre2bb3e6mM2d2vznggLcGs8Y0SX%2F9SsYGXwTGxjKEmM40IFuyLOl93qteXeG72evnyF1Mv4VjL7hCYPx6he%2BvEIJMQPVHl7ytSwgD64JJ5I%2FTm7YFj%2F5vLy3Mblv5Y29ZuDEOwyD2F8XCUTife6O4UOZGUfhSvO05DIpPXbgTr1LwOHKDaulf%2FjierksFBdvyL54%2FmWZPhiC9MnOzm9OC5dQdhy%2B5Ivxwhe%2BiMIzX32avd16gBy8bl3W9TzuubjoWefP4kAr3X%2FC%2Fg6ffweo38f5kn%2BcgHP%2B%2BTlv55Qar9IWvEAtUe7dj%2F5fudPyWjgT730r39PZlPQo36iLD0IECisWr%2BqEuqf%2Bn6Vjoy5A4IHfpJYzG10%2BR5%2F5cX06%2BXuvSbePq2yT9m%2BuEG%2FiTeaETgfcc7661XLhzY9%2Bfw3l8%2FezO%2FOBt3Qd1yZ0tkqoYE%2FXXjXw3qJRu3iH2XuPrsTcKIzf2w%2Fm6kXk49zZ3JI9YJss4GQOUG4HAn3vX%2BRECLd6hvguVx0CiO1F%2B0re3KJ4q0kLgOqGf2UJ1Xa0l3dDYW5NUHIXq8WmX1NJa96rY093FyeztL0WFd0SKRhb6a5SQ8u2GZPSbLVVnfm6IEOnp9IPgLgzCKKmMPyWfzZ25K%2BuPuhIu3JEfayhSdOroVqfxLNA%2F1dd5gG6j9GG%2FvCj2FQrcpEsvDvV6yBZisvySORr588nX5Ne9cCRQ%2F%2BD2wr9SXGDboh%2B6nXuYPDotug3jOJzpBjR1Tf3Ye1QX9Ci8KEhVZZPAf35%2B%2B3Ocdq1K9xkRqz57r7miFAc%2Be%2BHMi6M3dUt69ZpxtK6TojJEbP37ZYtxjKTANc3hG%2BZpoZvi6mTT%2BBZ61JcUfRogEToQif7IARCizNEEpqaxijtqMHcjDr79o2%2BsuUmgpQZGdmLILgBJetIdhuwBENOTbtRKnWqs%2BBHORq4aJiAd4IisA0%2FR4WAxYIhuAjrEJn7grvADl%2FBDigp%2BIG7AD4ihJfzAx0gyql8FWSW%2F%2BAkaxJgzFmPu3dh9Vu%2BrbvjLe3IXC7vgczZTWX7UZ08R9Mh3Z4qsQy3C6f9Wy9XVHb66gZEfXtbrPnqTVaSeot%2BOuzXvZlwKF8RZZv54rDtZw1yAQ83MpYZr0K64BixyDYSrUidCtMo1OLXENEgLoVPiVLzMYxMSncqcI62HRYPUaZY679zl0p2PI0X2ADtKZkJ7Cf3DCpwVWEiXVVVzzYmTDXCBd4ULJWkS0youbOxqeVwQtpRRunOS9fR544exthoaZrcyiyD5lOY9XfTL2I3iG22kLJV98nV30wWkfqdmUT0l3nyc1XgKwtHPdVFaAa5%2F5W6PwtV87I3Ta7m5k%2FpW9RaP6SuGUTwNJ%2BHcDR62pbtndxmuopFXL46r3k%2B8uB6BvXHBDFtdK7mlQKoLgaXdirxAYcuvou3WtDqSB6iBdN9yNyxCfx4vc8%2F%2FrgtyC5Vy5hCOmcSCcEZZadlCWDTANqyOmMIypTVBAhmAKQ20bYwoVEQUc9UrQig%2BrmeUORgLwDHHgDCRsuMtga0Hcktum3lrT4HsGHVODaOD%2BrdKd8e1P7JC98n9FUZ%2BrJjocmDrx7F10oqtQ9gRXyfiAL6OjFZmS3ydD6jSAFWsY8aBiGDW9QdQ6BUUujIdV0BByhODguhf2M9E97y0Dy1K%2B5BaFvfJgeI%2Bay7uU15dCz2J%2B2W9lEuHKHmacgqlkqlRQQ421IfUwUBJ1JBxuRGb27ZGpHAYZJJgTCU%2BtjEBHYkogRRgCRhq0podgV9%2BACoUx1FhIyVZdEQ1prVTJAsCuSMwB5hBjES2WDYtrrEjbWQvuWDkAE6oIJKBygqvecoaeSpPaU7zgDtAqc1SjWBO193fC6uEkUXCtRRaAXLYDqE1NVpfltB6Sarw93AZTyLv8Z9fE%2FVjkHyPk3xRK8kXdaUO4wOCJiA0SL7UlpkbHhn%2BiR2iPrvg5SJ14kuCl1wE6GMYRHdBuFJzAe6C1XI9umeDNkWRyo1GqbiV6DXu0zIMVrF3sy0%2BC4D66j55gYJwfz1LafxXGb6e0vCtOvjiDl9%2F2oFYZz78UuQoJQdGjkJrkaNZVEGz0FEFXmIIHT2dE18jzihFnL%2BHScD5IOC0jRvlTi5G1ELYKOoKPWgJPZghAsiIHtgaehwVOMqpw3f5BAb16szln030usYi9UfHwQwIZECgQ1UsBUOklXiCuwslkk7RYsMAzkpyIJOZsHqJMoStwgwVWlcFlA8VZ7hTdvhPqFa4t9A9V7NLHAgGcjSSo9whFtSRo%2ByIHCniBxCjNNiq7RHj5cf2EQ3CNr198FB3XyZcNfFcYOoIxYslg0QwAZkh3A86RCbBbQwASilJwdy2O7C8mEldVB3mDmSMISqToDrasDrhjoYKqAhEaGdDw%2BqUl1lhsYold8WhkXuDNn7e2vh8kIXPUxtnXe0Cx4CcnTZ%2BVITeoI0P2vjlI5B1bZyKjgAGKSX2%2FLRxMWjjgzb%2BjrRx2pXvDnJ5dtr4CcL%2BetbGqbZtWtXGxaHaOL8gbbyymOv0YSjkMdo4lLKojTesr1PjnEAd32SfqxKYqu0vlnrtKez21YM0aGWl37dFDbF2Q4e7KbSKtXn1pqudBliU7DWGJFemcCtoS7nZUPT7mYuuWA8m5zYX6N3NBetqLti5zQXuXwjoO%2FafW5cCwIFSAG2zm6C6GjDphc2jjFCznDHpYtnDZ%2Bk%2BPl1bHwrhKCmBCQ4g5LC8AaC%2BPt%2FbYUtcnlQoaKKWYkmRELYMhxgZ9vAZ078RaxiSTlPLXRIMnGJr76nyv53Lxt5iCtobhYVvSrUetv23dTxIu9kjmTksYC8iHYAqJwSN47KMKM33BLmvB29DF96Gh8Bdaqzx3Gg0HeClyTaqdlZMbt5GdSx4pFczISbbpgmq8gg2QIs1PyY6LtPIHmSxmI62NbK0oMqTEv8G4uZPy0XH4kXTwf2y8rptcOAD57IUBlawgxWYLbx2WMEmceTpeEEbh3PGAooO5xT8T%2B5wbhp3durwtnMC%2FJbK82kH8Gs4WcbucpekTB2mVM%2BzGL0PEa45cK0TcC2zL8wO1%2BInZ1qXH5ghknstumRSR0CtRyazXTfxyMBsH0shDXI%2FoRe4lB8YSeAwDKRYpxquyz2GKHEQELscNF02ljkmrDpf8O4Qi4shFWKZVLJMNFZoxRjC3hetlHe8k5q83uUKBHFHSiIxAQKBeoIo%2B%2Bb217dEEbsDXc7JoZ82s6UI0IAijszl1xnzgC3c%2BVnUZVGS6MehXz7soSHeM4ociiBHgsJKEF%2BXbZUI1RKhoAqhGPz2sqt4fEFKYw8MkT9GtAS2AoDxUek3IIYO%2BTh%2B%2B0syvN7qs5mTPQMtTiq7fG32oANnhVmR7cbbLxtYaTMca%2Bjt7xlqOjvtq%2BONyYOta5%2Bt6%2Ba%2F7utz5M5HSi55GmKDTnLSl2xg%2B2qABZntCxSVdkNaVNPpX0TaAorLTxEiz%2BX8rwyUG6kvwLBFrR91vnKEJdXb%2BpjkUorq0ViG%2BiSJLt4VXNy0NZHEOgsF3yzJ039UaxwhRy1WxiEW6j8hGrRmST2qxuc9%2BsvYm7lXSbbIS4Nnvit%2Bs%2B5wFtDRnqlsJ0bmOzfsDDFFaCKAbUHxUXFUjOyM6h7SQZy5frgl9CERzYlApaPNfyVQ0UdoVHedm2CFC1uo0ioFxKAJnlgT%2FHp%2F8z1BxU%2F6Be8HWDiFKghBV7lay25kSg7U%2B2zFPODdMQ9nuicYQtTNZNCisI8NWf173RJMdvvUz3YqOpLBy1MhTGTR51S8u6wFsKsTbMtTwU49FVV34aUZpqD1oyrxoelyWuSuFQbDFBQpW%2Bk5KouT%2FHozHONHkSOBIh9gyodzXG2Ee3CekxOkjeidGti5UEObtBEwEyOK23lpL%2FSAGtIDhPyo%2B7Pj3Oyu%2BUN9mEZ7WKrCDhuW36E97EfkP63m%2Bm3P5Jyk2etEKYdT5zkIX0ZThX%2BOmuWZP3fjsLnI9641YthRfBYkRXnTZH43asTWDogkR2VVGeDmIuAGDXBzVnCTzmTncIMYPDXcHJWPZYCbi4Cb83D3DXCzgZuOTMxluCGmpHH9wg3v34DQd95JiGzb0zKVtN6exppbELLNUAUDQh%2Fmg4osTvfnd4ZIOowSSiCo7iWprQyhg4EsbNA6tK5EjmSY6f07rBxPVqprySQhPgIV2bbDZZqWHSoy7BU%2BCRUhsX%2F3Y0JFWBKgmENlNddWVlSEuBBAUIkb1tVUBIV6vpCgYswWfRizT7Dfvn8qsp0EOVMg6qmoxVEI1OTqOwUVEbrfNJ1QEeEcUMArW%2BJrK2sqkpRirRBWOFldbU1HBCPMTeyoVNkOIWWzNGwo%2FGAq5Ob8sB%2FhbOTGVztS5AzRYue1zRDijvTLa5hFymTSL0sdxLVbDq1l0cmcpi3BCCCHDfHr7xyOvrlz%2FzkMxnefBkjq1qCFzLhUBzjmLOZtjlMrBhhkAQDFNE19GrQya8klR8QgYlmHwIfqEG0iYrgpQKwPHQJhR0n2hAIoacXGpDQGpTAQRjE%2BJMUQdRCVoHBvy5YwdphSNiBjBqtZw7bKScn21bakenyAgDRkO%2B9RppnbIT9DPNomh6JtAizpwsypW9BOWX1uXEXxYwcrXZ4wxuUB%2B4nR4bUtkVD1IKNLIyFhe%2Bt9RhhWUocZ%2FDGY9EJA15I4CArETBvnidi%2FsvfUxYQnB4ZxAtR3XEcje1pS3EZv7ufkoO32exqiqiG1diFCgPfFuy4%2F54VA50J4bZJYIpPkSFkvlFcOda4lt0oFCepY1yYpYfsqvWR7zYb84hw1Y3c53fx49l%2Fvdbr37aXvbqy0cK2PQwVO2uzB9mn1ebqzvqPHosSIKTdwvH7IjgDo6HxoECCKDX5JvN%2BnWVcf0joqxtLhAnJsyKx8XOU%2BtkrQ445gUiwYS%2FiR4gnP5lRIbSkF7ioOI3%2FsjrUNdaRAcaR%2Buyc1mWrb8G7EC9wnL7h1Rz8nCa6arKUdW0CBKaSvDL7m3fp7WdvhNlDVA6bTQSEmFZUTyTKO3AwZt%2BiR3RI%2BPy8VlpcNos1gYfa3r%2FIn%2BNf86R9fvjw%2B0PnDLb%2B9NnlkSvOcY6OjwF0u%2FVGZIW%2BLc1N6KIsrsR8Dz2schkBbaWBV0BYAO2ao3rSy5sZpxb1WQinK1ghUamvNsSttNWaU1W7zGu5U7RzvliUZ1x6qrL1Qwdy0ugK3khnY4dDIrbsdRHvQutrkfst0%2BHQ0mOH8EWRYeC1ycaifUagBfzuyOtL6Wzj29B3%2FBw%3D%3D" width="672" height="400px">
+</iframe>
+</div>
+<div id="implementacao" class="section level2">
+<h2><span class="header-section-number">4.2</span> Implementação</h2>
+<p>A tabela abaixo, que deve ser atualizada conforme adicionamos novos elementos, lista as implementações, bem como o seu estágio.</p>
+<table>
+<caption><span id="tab:tab-imp">Table 4.1: </span>Implementações</caption>
+<thead>
+<tr class="header">
+<th align="left">Recurso</th>
+<th align="left">Implementado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">scraper tribunais</td>
+<td align="left">parcial</td>
+</tr>
+<tr class="even">
+<td align="left">crawler djes</td>
+<td align="left">sim</td>
+</tr>
+<tr class="odd">
+<td align="left">indexação para Solr</td>
+<td align="left">sim</td>
+</tr>
+<tr class="even">
+<td align="left">tika-ocr</td>
+<td align="left">sim</td>
+</tr>
+<tr class="odd">
+<td align="left">stopwords</td>
+<td align="left">parcial</td>
+</tr>
+<tr class="even">
+<td align="left">anotação</td>
+<td align="left">não</td>
+</tr>
+<tr class="odd">
+<td align="left">fuzzy search</td>
+<td align="left">sim</td>
+</tr>
+<tr class="even">
+<td align="left">regex textos</td>
+<td align="left">sim</td>
+</tr>
+<tr class="odd">
+<td align="left">parseamento htmls</td>
+<td align="left">parcial</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="section" class="section level2">
+<h2><span class="header-section-number">4.3</span> </h2>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="req.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sysconf.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["ManualMyrthes.pdf", "ManualMyrthes.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

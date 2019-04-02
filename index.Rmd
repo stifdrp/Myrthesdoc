@@ -1,0 +1,24 @@
+--- 
+title: "Laboratório de jurimetria: documentação"
+author: "José de Jesus Filho"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: book.bib
+biblio-style: apalike
+link-citations: yes
+description: "Documentação da arquitetura, instalação, administração e utilização da arquitetura do laboratório de jurimetria da faculdade de direito da USP de Ribeirnao Preto."
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(magrittr)
+```
+
+# Visão geral
+
+Este documento contêm tudo que se refere ao Myrthes. Nele há seções úteis tanto para desenvolvedores quanto para usuários (estudantes e professores de direito).
+
+
+
+
+
