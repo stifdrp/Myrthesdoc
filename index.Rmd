@@ -21,5 +21,25 @@ Este documento contêm tudo que se refere ao Myrthes. Nele há seções úteis t
 
 
 
+# TODO
+
+## NLP
+- [ ] Padronizar nomes das partes: pedir ajuda de alunos
+- [ ] Criar uma lista de stopwords, isto é, além das preposições, artigos etc, incluir palavras sem significado relevante para texto jurídico.
+- [ ] Criar thesaurus. O tesauro deve conter palavras e respectivos scores conforme a área do direito.
+- [ ] Criar dicionário para topic modeling. O dicionário pode conter conceitos abstratos e palavras associadas a ele.
+- [ ] Criar NER.
+
+## Infra
+
+- [ ] Experimentar Cloudera e Horthonworks
+
+## Frontend
+
+- [ ] Experimentar framework js (react, vue etc), shiny, django etc.
+
+## Tribunais
+
+
 
 

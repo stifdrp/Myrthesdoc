@@ -1,6 +1,0 @@
-book_filename: "Mirthesdoc"
-delete_merged_file: true
-language:
-  ui:
-    chapter_name: "Parte: "
-output_dir: "docs"

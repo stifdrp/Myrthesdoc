@@ -2,7 +2,7 @@
 
 Diante do volume de processos judiciais em versão eletrônica atualmente disponíveis nas páginas dos tribunais, o acesso a esses dados tornou-se possível. Atualmente se vislumbra a possibilidade de baixar processos inteiros e analizá-los. Essa possibilidade, porém, implica em desafios.
 
-A comunidade do direito não é muito afeita à computação, bem como, aos métodos estatísticos e de aprendizado de máquina que atualmente avançam rapidamente e são liderados principalmente por pessoas provenientes da ciência da computação.  Acontece que, embora o pessoal da ciência da computação e da estatística tenha liderado a implementação dos métodos de automação de coleta, extração, organização e análise de processos judiciais, ela carece de conhecimento substantivo do direito e isso tem causado erros e equívocos nas coletas e análises de dados. 
+A comunidade do direito não é muito afeita à computação, bem como, aos métodos estatísticos e de aprendizado de máquina que atualmente avançam rapidamente e são liderados principalmente por pessoas provenientes da ciência da computação.  Acontece que, embora o pessoal da ciência da computação e da estatística tenha liderado a implementação dos métodos de automação de coleta, extração, organização e análise de processos judiciais, ele carece de conhecimento substantivo do direito e isso tem provocado erros e equívocos nas coletas e análises de dados. 
 
 A necessidade de se implementar um laboratório de jurimetria na faculdade de direito que contemple a interdisciplinariedade se impõe, visto que um laboratório como este exige conhecimentos em várias áreas:
 
@@ -13,5 +13,40 @@ A necessidade de se implementar um laboratório de jurimetria na faculdade de di
 3 - Conhecimentos específicos sobre estatística e machine larnings;
 
 4 - Conhecimento aprofundado de cada uma da áreas do direito aplicado diariamente no tribunais de justiça do Brasil.
+
+## Sistemas distribuídos
+
+Vivemos uma revolução no acesso a dados e velocidade de computação e de network. A chamada computação na nuvem ou mais tecnicamente infraestrutura como serviço (IaaS na sigla em inglês), permite mesmo para equipes pequenas, a distribuição de tarefas em várias máquinas virtuais sem que isso apareça para o usuário final. Para o estudante ou professor que acessa os dados, tudo parece como se fosse uma única unidade, mas na verdade, as operações são realizadas por várias instâncias e aplicações, todas orquestradas para para parecer como um único serviço.
+
+Os objetivos que buscamos atingir com esta arquitetura são:
+
+- Armazenar dados para que possam ser encontrados novamente mais tarde (bancos de dados)
+- Memorizar o resultado de uma operação intensa, para acelerar novas leituras (caches)
+- Permitir que os usuários pesquisem dados por palavra-chave ou filtrem  de várias maneiras (índices de pesquisa)
+- Enviar uma mensagem para outro processo, para ser tratado de forma assíncrona (stream processing)
+- Analisar periodicamente uma grande quantidade de dados acumulados (processamento em batch)
+
+Para tanto, três aspectos são considerados:
+
+- Confiabilidade. O sistema precisa continuar trabalhando corretamente, mesmo diante de adversidades (falhas de hardware, falhas de software, erros humanos)
+
+- Escalabilidade. Conforme o sistema cresce, mais dados, mais acessos, maior complexidade, tem de haver maneiras razoáveis de tratar desse crescimento.
+
+- Mantenabilidade. Com o tempo, pessoas diferentes irão trabalhar no sistema para dar manutenção ou para realizar adaptações. Elas têm de estar em condição de fazer isso de forma produtiva.
+
+
+Esta documentação toma em consideração os vários aspectos de sistemas distribuídos, mas não detalha nenhum deles, apenas explica as motivações por trás da escolha de um software em vez de outro e mostra como usá-la. É essecialmente um texto operacional. Na bibliografia ao final do livro, encontram-se as obras de referência. Para uma abordagem mais estrutural, consideramos indispensável a leitura de [@kleppmann2017designing]. Colocado de forma simples, os principais aspectos de um sistema distruído leva em conta:
+
+- Gerenciamento de grande volume de dados. Evitamos o uso da expressão Big Data porque seu conceito é vago, poroso e o abuso no uso tem levado à sua banalização, o que não condiz com a seriedade de sistemas distribuídos. Com o surgimento de bases noSQL, podemos hoje trabalhar tanto com bases estruturadas quanto não estruturadas, tais como textos (petições, inteiro teor de sentenças e de acórdãos). 
+
+- Segurança
+
+- Gerenciamento
+
+- Aplicação 
+
+
+
+
 
 
